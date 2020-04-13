@@ -1,0 +1,12 @@
+{
+	"folders": [
+		{
+			"path": "../.."
+		}
+	],
+	"settings": {
+		"files.associations": {
+			"etest.h": "c"
+		}
+	}
+}
