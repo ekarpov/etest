@@ -7,7 +7,6 @@
 #include <time.h>
 #include <stdarg.h>
 #include <assert.h>
-#include <string.h>
 
 #include "etest.h"
 

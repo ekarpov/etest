@@ -5,6 +5,9 @@
 #ifndef _ETEST_H_INCLUDED_
 #define _ETEST_H_INCLUDED_
 
+#include <string.h>
+#include <wchar.h>
+
 /* allow using in C++ */
 #ifdef __cplusplus
 extern "C" {
@@ -174,8 +177,8 @@ void    etest_elibc_trace_callback(const char* msg, void* callback_param);
     }
 
 /* known value types */
-#define ETEST_ASSERT_EQUALS_STRING(_val1, _val2) ETEST_ASSERT_EQUALS_CMP((_val1), (_val2), estrcmp)
-#define ETEST_ASSERT_EQUALS_STRINGW(_val1, _val2) ETEST_ASSERT_EQUALS_CMP((_val1), (_val2), ewcscmp)
+#define ETEST_ASSERT_EQUALS_STRING(_val1, _val2) ETEST_ASSERT_EQUALS_CMP((_val1), (_val2), strcmp)
+#define ETEST_ASSERT_EQUALS_STRINGW(_val1, _val2) ETEST_ASSERT_EQUALS_CMP((_val1), (_val2), wcscmp)
 
 /*----------------------------------------------------------------------*/
 
